@@ -72,7 +72,7 @@ app.post('/api/personajes', (request, response) => {
     response.json(personaje)
 })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Mi primer servidor en NodeJS ${PORT}`)
 })
